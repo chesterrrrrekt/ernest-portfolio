@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+
+
+@font-face {
+  font-family: 'GnomePixel';
+  src: url('/src/fonts/GomePixel-ARJd7.woff2') format('woff2'),
+  url('/src/fonts/GomePixel-ARJd7.woff') format('woff')
+}
+
+@theme{
+  --color-primary: #F0F0F0;
+  --color-secondary: #00b7ff;
+  --color-background: #213345;
+}
+
+
+  h1{
+    font-size: 50px;
+    color:#F0F0F0;
+    text-shadow: 1px 2px 2px #00b7ff;
+  }
+
+  h2{
+    font-size: 35px;
+    color: #F0F0F0;
+    text-shadow: 1px 2px 2px #00b7ff;
+  }
+
+  h3{
+    font-size: 25px;
+    color: #F0F0F0;
+    text-shadow: 1px 2px 2px #00b7ff;
+  }
+
+  a{
+    color: var(--color-primary);
+    text-shadow: 1px 2px 2px #00b7ff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover{
+    text-shadow: none;
+    color: #FF4800;
+  }
+
+  button{
+    background: transparent;
+    color: var(--color-primary);
+    text-shadow: 1px 1px 1px rgb(0, 4, 63);
+    box-shadow: inset 2px 2px 3px rgba(227, 251, 255, 0.8),
+      inset -2px -2px 3px #06dbeb99;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out, right 0.3s ease-in, transform 0.2s ease-in, color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  button:hover{
+     background-color: rgb(202, 240, 255);
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 8px #06dceb;
+
+  }
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+
+body{
+  font-family: "GnomePixel", sans-serif;
+  
+}
+
+nav{
+  background-color: rgba(0, 0, 0, 0.151);
+  backdrop-filter: blur(8px);
+  box-shadow: 2px 0px 20px -5px black;
+  z-index: 50;
+
+}
+
+#boczneMenu{
+    width: 100vw;
+    right: 0;
+    top: -300px;
+    border-bottom: 1px solid rgb(138, 176, 219);
+
+    background: #213345fa;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+
+    text-align: center;
+
+    transition: all 0.5s ease-in-out;
+}
+
+#boczneMenu.show{
+  top: 0;
+}
+  

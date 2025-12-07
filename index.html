@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="public/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Chesterrrrr</title>
+  <script type="module" crossorigin src="/src/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/src/style.css">
+</head>
+
+<body class="bg-background">
+  <nav class="w-full flex fixed top-0">
+
+    <div class="w-full h-[90px] flex items-center justify-between">
+      <img src="public/logo.png" alt="logo" class="absolute top-[7px] left-0" data-aos="zoom-out-right"
+        data-aos-duration="1000"></img>
+
+      <div class="ml-[50px] flex">
+        <h1 class="text-3xl ml-[60px] flex" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="700">
+          PORTFOLIO
+        </h1>
+        <div class="flex">
+          <button onclick="sideBarOpen()" class=" self-center rounded-full px-3
+              md:hidden ml-60">MENU</button>
+        </div>
+
+      </div>
+
+
+      <ul class="hidden md:flex text-white gap-5 mr-10 text-xl lg:text-xl">
+        <li><a href="#home" class="text-xl">Strona główna</a></li>
+        <li><a href="#oMnie" class="text-xl">O mnie</a></li>
+        <li><a href="#hobby" class="text-xl">Hobby</a></li>
+      </ul>
+
+      <ul id="boczneMenu" class="md:hidden">
+        <li><a href="#home" class="text-xl" onclick="sideBarClose()">Strona główna</a></li>
+        <li><a href="#oMnie" class="text-xl" onclick="sideBarClose()">O mnie</a></li>
+        <li><a href="#hobby" class="text-xl" onclick="sideBarClose()">Hobby</a></li>
+        <button onclick="sideBarClose()" class="flex absolute rounded-full px-3
+              md:hidden top-10 right-5"> X </button>
+      </ul>
+
+    </div>
+
+
+
+  </nav>
+
+  <section id="home" class="scroll-mt-30">
+    <div
+      class="text-white flex flex-col items-center w-full mt-30 md:grid md:grid-flow-col md:grid-col-2 text-center md:justify-center">
+      <img src="public/face.png" alt="Twarz" class="w-[200px] md:w-[350px] mb-10 md:mb-0" data-aos="zoom-out-right"
+        data-aos-duration="800" data-aos-delay="500">
+      <div class="grid-cols-2" data-aos="slide-left" data-aos-duration="800">
+        <h1 class="-mb-15">Cześć!</h1><br /><br />
+        <h2 class="-mb-5">Mam na imię <span
+            class="text-[var(--color-secondary)] text-shadow-[1px_1px_1px_white]">Ernest</span>.</h2>
+        <br />
+        <h3 class="-mb-5">Moje portfolio nie istnieje,<br />
+          bo nie tworzę stron zawodowo.</h3><br />
+        <h2 class="-mb-5">Strona imituje profesjonalną,<br />
+          a jest totalnym ściekiem.</h2><br /><br />
+        <h1 class="-mb-15 mt-5">Poniżej więcej o mnie!</h1><br />
+      </div>
+    </div>
+  </section>
+
+  <div class="w-full justify-center flex">
+    <img src="public/pasek.png" alt="pasek" class="my-30 mt-45 w-[400px]">
+  </div>
+
+  <section id="oMnie" class="scroll-mt-30">
+    <div class="text-white text-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+      <h1>O Mnie</h1>
+      <h2>Eh, nie lubię o sobie gadać...</h2>
+      <h3>Najchętniej bym tu wstawił <span class="text-[var(--color-secondary)]">Lorem Ipsum</spa>.</h3>
+      <h2>Ciekawe czy fajnie ta strona wygląda.<br>
+        Mam nadzieję, że tak, bo nie śpie po nocach<br>
+        oglądając dwugodzinne filmy na temat <span class="text-[var(--color-secondary)]">HTML/CSS/JS</span>.</h2>
+    </div>
+  </section>
+
+  <div class="w-full justify-center flex">
+    <img src="public/pasek.png" alt="pasek" class="my-30 mt-45 w-[400px]">
+  </div>
+
+  <section id="hobby" class="scroll-mt-30">
+    <div class="text-white block text-center justify-center">
+      <h1>Co lubię?</h1>
+    </div>
+
+    <div class="flex flex-col text-center mt-15 text-white md:grid md:grid-cols-2 md:grid-rows-2 md:gap-6 md:p-6">
+      <div class="flex flex-col items-center text-center">
+        <h2 data-aos="fade-right" data-aos-duration="700">Jeździć moto</h2>
+        <img src="public/cbr.jpg" alt="motocykl" class="w-[450px] shadow-[0px_7px_20px_-2px_black] self-center"
+          data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="700">
+      </div>
+      <div class="flex flex-col items-center text-center mt-15">
+        <h2 data-aos="fade-left" data-aos-duration="700">Grać na kompie</h2><br>
+        <img src="public/pecet.jpg" alt="gry komputerowe"
+          class=" w-[450px] shadow-[0px_7px_20px_-2px_black] self-center -mt-5 md:mt-0" data-aos="zoom-in-right"
+          data-aos-duration="700" data-aos-delay="1400">
+      </div>
+
+
+      <div class="flex flex-col items-center text-center mt-15 text-white">
+        <h2 data-aos="fade-right" data-aos-duration="700">Grać na pianinie</h2>
+        <img src="public/piano.jpg" alt="Pianino" class=" w-[450px] shadow-[0px_7px_20px_-2px_black] self-center"
+          data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="700">
+      </div>
+
+      <div class="flex flex-col items-center text-center mt-15 text-white mb-[100px]">
+        <h2 data-aos="fade-left" data-aos-duration="700">Czytać ksionszki</h2>
+        <img src="public/books.jpg" alt="Pianino" class=" w-[450px] shadow-[0px_7px_20px_-2px_black] self-center"
+          data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="1400">
+      </div>
+
+    </div>
+  </section>
+
+  <footer data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top bottom">
+    <div
+      class="w-full bg-gray-900 h-[70px] text-gray-600 text-center flex justify-center shadow-[0px_4px_20px_5px_#1D1D24]">
+      <h3 class="text-xs self-center">Nic tu nie ma, stuuupek też</h3>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    const boczne = document.getElementById('boczneMenu');
+
+    function sideBarOpen() {
+      boczne.classList.add('show');
+    }
+
+    function sideBarClose() {
+      boczne.classList.remove('show');
+    }
+  </script>
+  <script>AOS.init();</script>
+
+
+</body>
+
+</html>
