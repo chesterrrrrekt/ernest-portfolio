@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/ernest-portfolio/assets/logo-B5DAPZqo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Chesterrrrr</title>
+  <script type="module" crossorigin src="/ernest-portfolio/assets/index-yD9jkNOF.js"></script>
+  <link rel="stylesheet" crossorigin href="/ernest-portfolio/assets/index-Ey6wQaRd.css">
+</head>
+
+<body class="bg-background">
+  <nav class="w-full flex fixed top-0">
+
+    <div class="w-full h-[90px] flex items-center justify-between">
+      <img src="/ernest-portfolio/assets/logo-B5DAPZqo.png" alt="logo" class="absolute top-[7px] left-0" data-aos="zoom-out-right"
+        data-aos-duration="1000"></img>
+
+      <div class="ml-[50px] flex">
+        <h1 class="text-3xl ml-[60px] flex" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="700">
+          PORTFOLIO
+        </h1>
+        <div class="flex">
+          <button onclick="sideBarOpen()" class=" self-center rounded-full px-3
+              md:hidden ml-60">MENU</button>
+        </div>
+
+      </div>
+
+
+      <ul class="hidden md:flex text-white gap-5 mr-10 text-xl lg:text-xl">
+        <li><a href="#home" class="text-xl">Strona główna</a></li>
+        <li><a href="#oMnie" class="text-xl">O mnie</a></li>
+        <li><a href="#hobby" class="text-xl">Hobby</a></li>
+      </ul>
+
+      <ul id="boczneMenu" class="md:hidden">
+        <li><a href="#home" class="text-xl" onclick="sideBarClose()">Strona główna</a></li>
+        <li><a href="#oMnie" class="text-xl" onclick="sideBarClose()">O mnie</a></li>
+        <li><a href="#hobby" class="text-xl" onclick="sideBarClose()">Hobby</a></li>
+        <button onclick="sideBarClose()" class="flex absolute rounded-full px-3
+              md:hidden top-10 right-5"> X </button>
+      </ul>
+
+    </div>
+
+
+
+  </nav>
+
+  <section id="home" class="scroll-mt-30">
+    <div
+      class="text-white flex flex-col items-center w-full mt-30 md:grid md:grid-flow-col md:grid-col-2 text-center md:justify-center">
+      <img src="/ernest-portfolio/assets/face-CnWqVeuI.png" alt="Twarz" class="w-[200px] md:w-[350px] mb-10 md:mb-0" data-aos="zoom-out-right"
+        data-aos-duration="800" data-aos-delay="500">
+      <div class="grid-cols-2" data-aos="slide-left" data-aos-duration="800">
+        <h1 class="-mb-15">Cześć!</h1><br /><br />
+        <h2 class="-mb-5">Mam na imię <span
+            class="text-[var(--color-secondary)] text-shadow-[1px_1px_1px_white]">Ernest</span>.</h2>
+        <br />
+        <h3 class="-mb-5">Moje portfolio nie istnieje,<br />
+          bo nie tworzę stron zawodowo.</h3><br />
+        <h2 class="-mb-5">Strona imituje profesjonalną,<br />
+          a jest totalnym ściekiem.</h2><br /><br />
+        <h1 class="-mb-15 mt-5">Poniżej więcej o mnie!</h1><br />
+      </div>
+    </div>
+  </section>
+
+  <div class="w-full justify-center flex">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoEAAAAkCAYAAAD2HeDMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1YWNjOWNlZC01OWU4LWI2NDMtOTI2Yi1hMDhmNGVlY2IyMWQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzIyMDFENThDOTUxMTFGMDhCMTNGQjg0Mzc5NjRENTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzIyMDFENTdDOTUxMTFGMDhCMTNGQjg0Mzc5NjRENTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N2VmMzNmODgtM2E4Yy01MTQwLThmN2MtNDAwMDliNTY5ZTU2IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YmI2MzMwMjItYzk0ZC0xMWYwLWJkN2It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" alt="pasek" class="my-30 mt-45 w-[400px]">
+  </div>
+
+  <section id="oMnie" class="scroll-mt-30">
+    <div class="text-white text-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+      <h1>O Mnie</h1>
+      <h2>Eh, nie lubię o sobie gadać...</h2>
+      <h3>Najchętniej bym tu wstawił <span class="text-[var(--color-secondary)]">Lorem Ipsum</spa>.</h3>
+      <h2>Ciekawe czy fajnie ta strona wygląda.<br>
+        Mam nadzieję, że tak, bo nie śpie po nocach<br>
+        oglądając dwugodzinne filmy na temat <span class="text-[var(--color-secondary)]">HTML/CSS/JS</span>.</h2>
+    </div>
+  </section>
+
+  <div class="w-full justify-center flex">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoEAAAAkCAYAAAD2HeDMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1YWNjOWNlZC01OWU4LWI2NDMtOTI2Yi1hMDhmNGVlY2IyMWQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzIyMDFENThDOTUxMTFGMDhCMTNGQjg0Mzc5NjRENTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzIyMDFENTdDOTUxMTFGMDhCMTNGQjg0Mzc5NjRENTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N2VmMzNmODgtM2E4Yy01MTQwLThmN2MtNDAwMDliNTY5ZTU2IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YmI2MzMwMjItYzk0ZC0xMWYwLWJkN2It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" alt="pasek" class="my-30 mt-45 w-[400px]">
+  </div>
+
+  <section id="hobby" class="scroll-mt-30">
+    <div class="text-white block text-center justify-center">
+      <h1>Co lubię?</h1>
+    </div>
+
+    <div class="flex flex-col text-center mt-15 text-white md:grid md:grid-cols-2 md:grid-rows-2 md:gap-6 md:p-6">
+      <div class="flex flex-col items-center text-center">
+        <h2 data-aos="fade-right" data-aos-duration="700">Jeździć moto</h2>
+        <img src="/ernest-portfolio/assets/cbr-CA5pTtK0.jpg" alt="motocykl" class="w-[450px] shadow-[0px_7px_20px_-2px_black] self-center"
+          data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="700">
+      </div>
+      <div class="flex flex-col items-center text-center mt-15">
+        <h2 data-aos="fade-left" data-aos-duration="700">Grać na kompie</h2><br>
+        <img src="/ernest-portfolio/assets/pecet-CZNiqoOV.jpg" alt="gry komputerowe"
+          class=" w-[450px] shadow-[0px_7px_20px_-2px_black] self-center -mt-5 md:mt-0" data-aos="zoom-in-right"
+          data-aos-duration="700" data-aos-delay="1400">
+      </div>
+
+
+      <div class="flex flex-col items-center text-center mt-15 text-white">
+        <h2 data-aos="fade-right" data-aos-duration="700">Grać na pianinie</h2>
+        <img src="/ernest-portfolio/assets/piano-B4_FMIvd.jpg" alt="Pianino" class=" w-[450px] shadow-[0px_7px_20px_-2px_black] self-center"
+          data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="700">
+      </div>
+
+      <div class="flex flex-col items-center text-center mt-15 text-white mb-[100px]">
+        <h2 data-aos="fade-left" data-aos-duration="700">Czytać ksionszki</h2>
+        <img src="/ernest-portfolio/assets/books-DWgfb7ay.jpg" alt="Pianino" class=" w-[450px] shadow-[0px_7px_20px_-2px_black] self-center"
+          data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="1400">
+      </div>
+
+    </div>
+  </section>
+
+  <footer data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top bottom">
+    <div
+      class="w-full bg-gray-900 h-[70px] text-gray-600 text-center flex justify-center shadow-[0px_4px_20px_5px_#1D1D24]">
+      <h3 class="text-xs self-center">Nic tu nie ma, stuuupek też</h3>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    const boczne = document.getElementById('boczneMenu');
+
+    function sideBarOpen() {
+      boczne.classList.add('show');
+    }
+
+    function sideBarClose() {
+      boczne.classList.remove('show');
+    }
+  </script>
+  <script>AOS.init();</script>
+
+
+</body>
+
+</html>
